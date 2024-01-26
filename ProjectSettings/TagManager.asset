@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Logic
+  - ScreenBorder
+  - PipeSpawner
+  - Bird
+  - Wing
+  - GameOverMenu
+  - Background
   layers:
   - Default
   - TransparentFX
@@ -12,9 +18,9 @@ TagManager:
   - Bird
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Wing
+  - Wing2
+  - Background
   - 
   - 
   - 
@@ -39,6 +45,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2970962149
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Wing2
+    uniqueID: 2969274271
+    locked: 0
+  - name: Bird
+    uniqueID: 2831432465
+    locked: 0
+  - name: Wing
+    uniqueID: 3753029319
     locked: 0

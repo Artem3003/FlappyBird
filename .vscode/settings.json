@@ -56,6 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Flarpy Blorb.sln",
+    "dotnet.defaultSolution": "FlappyBird.sln",
     "dotnet.preferCSharpExtension": true
 }
