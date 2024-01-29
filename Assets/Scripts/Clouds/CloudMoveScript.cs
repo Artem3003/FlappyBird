@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class CloudMoveScript : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 5;
+    public LogicScript logic;
     private float deadZone = -40;
 
     // Start is called before the first frame update
     void Start()
     {
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
 
     // Update is called once per frame
@@ -19,6 +20,6 @@ public class CloudMoveScript : MonoBehaviour
         {
             Destroy(gameObject); // destroy pipes and clouds
         }
-        transform.position += (Vector3.left * moveSpeed) * Time.deltaTime;
+        transform.position += (Vector3.left * logic.cloudMoveSpeed) * Time.deltaTime;
     }
 }

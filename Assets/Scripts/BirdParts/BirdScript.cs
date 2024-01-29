@@ -23,9 +23,17 @@ public class BirdScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && birdIsAlive)
+        if (Input.GetKeyDown(KeyCode.Space) && birdIsAlive) // sclick space
         {
             myRigidbody.velocity = Vector2.up * flapStrength;
+        }
+
+        if (Input.touchCount > 0 && birdIsAlive) // touch screen
+        {
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                myRigidbody.velocity = Vector2.up * flapStrength;
+            }
         }
     }
 

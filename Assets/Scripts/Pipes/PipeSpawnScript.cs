@@ -7,7 +7,7 @@ public class PipeSpawnScript : MonoBehaviour
 {
     private LogicScript logic;
     [SerializeField] private GameObject pipe;
-    [SerializeField] private float spawnRate = 5;
+    [SerializeField] public float spawnRate = 5;
     [SerializeField] private float timer = 0;
     [SerializeField] private float hightOffSet = 10;
 

@@ -16,9 +16,17 @@ public class WingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && bird.birdIsAlive)
+        if (Input.GetKey(KeyCode.Space) && bird.birdIsAlive) // ckick space
         { 
             animator.SetTrigger("Wing");
+        }
+
+        if (Input.touchCount > 0 && bird.birdIsAlive) // touch screen
+        {
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                animator.SetTrigger("Wing");
+            }
         }
     }
 }
